@@ -7,7 +7,7 @@
   "main": "src/entrypoints/worker.ts",
   "compatibility_date": "2025-08-01",
   "kv_namespaces": [
-    { "binding": "KV", "id": "<YOUR_KV_NAMESPACE_ID>" }
+    { "binding": "KV", "id": "40ed2f93f4f843909fdcf13a20184b7b" }
   ],
   "triggers": { "crons": ["0 * * * *"] },
   "minify": true,
