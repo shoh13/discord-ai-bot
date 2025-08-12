@@ -16,7 +16,8 @@
 		"id": "40ed2f93f4f843909fdcf13a20184b7b"
 		// "preview_id": "<プレビュー用ID>"  // 任意。開発用に別Namespaceを使う場合
 		}
-  	]
+  	],
+	"triggers": { "crons": ["0 * * * *"] }
 }
 	/**
 	 * Smart Placement
