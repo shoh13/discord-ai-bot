@@ -3,21 +3,17 @@
  * https://developers.cloudflare.com/workers/wrangler/configuration/
  */
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "discord-ai-bot",
-	"main": "src/index.ts",
-	"compatibility_date": "2025-08-09",
-	"observability": {
-		"enabled": true,
-	},
-	"kv_namespaces": [
-		{
-		"binding": "KV",           // コード上では env.KV で参照します
-		"id": "40ed2f93f4f843909fdcf13a20184b7b"
-		// "preview_id": "<プレビュー用ID>"  // 任意。開発用に別Namespaceを使う場合
-		}
-  	],
-	"triggers": { "crons": ["0 * * * *"] }
+  "name": "discord-ai-bot",
+  "main": "src/entrypoints/worker.ts",
+  "compatibility_date": "2025-08-01",
+  "kv_namespaces": [
+    { "binding": "KV", "id": "<YOUR_KV_NAMESPACE_ID>" }
+  ],
+  "triggers": { "crons": ["0 * * * *"] },
+  "minify": true,
+  "upload": {
+    "format": "modules"
+  }
 }
 	/**
 	 * Smart Placement

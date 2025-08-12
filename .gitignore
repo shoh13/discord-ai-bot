@@ -167,3 +167,21 @@ dist
 .wrangler/
 
 .DS_Store
+
+# dependencies
+node_modules/
+
+# wrangler / build artifacts
+.wrangler/
+dist/
+build/
+
+# env and secrets
+.env
+.env.*
+*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
